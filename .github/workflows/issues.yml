@@ -1,0 +1,11 @@
+name: open-issue
+on: 
+    issues:
+        types:
+            - opened
+
+jobs:
+    echo_issue:
+        runs-on: ubuntu-latest
+        steps:
+            - 
