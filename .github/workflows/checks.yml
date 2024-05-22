@@ -1,0 +1,17 @@
+name: checks
+on: push
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - run: npm lint
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - run: npm test
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - run: npm build
+            
+    
